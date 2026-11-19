@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chic Fashionista</title>
+  <style>
+    /* BASIC STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* GRID LAYOUT (Matches assignment wireframe) */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* LAYOUT SECTIONS */
+    .header {
+      grid-column: 1 / -1;
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .sidebar {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1fr solid #ddd;
+    }
+
+    .content-a {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .content-b {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .content-c {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      grid-column: 1 / -1;
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    /* INNER TWO-COLUMN GRID FOR CONTENT B & C */
+    .sub-grid {
+      grid-column: 2 / 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+    }
+
+    /* IMAGES */
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* ==========================================
+       ASSIGNMENT REQUIREMENTS (CSS EFFECTS)
+       ========================================== */
+
+    /* 1. ANIMATION EFFECT (Applied to the live badge in header) */
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .animated-badge {
+      display: inline-block;
+      background-color: #e91e63;
+      color: white;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      margin-top: 5px;
+      /* Animation applied here */
+      animation: pulse 2s infinite;
+    }
+
+    /* 2. FILTER EFFECTS (Applied to images in Content A and Sidebar) */
+    .filter-grayscale {
+      /* Filter 1: Grayscale */
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .filter-grayscale:hover {
+      filter: grayscale(0%);
+    }
+
+    .filter-sepia {
+      /* Filter 2: Sepia & Brightness */
+      filter: sepia(60%) brightness(90%);
+      transition: filter 0.3s;
+    }
+
+    .filter-sepia:hover {
+      filter: sepia(0%) brightness(100%);
+    }
+
+    /* 3. TRANSFORM EFFECTS (Applied to Content B & C cards) */
+    .transform-zoom {
+      transition: transform 0.3s ease;
+    }
+
+    .transform-zoom:hover {
+      /* Transform 1: Scale (Zoom in) */
+      transform: scale(1.05);
+    }
+
+    .transform-lift {
+      transition: transform 0.3s ease;
+    }
+
+    .transform-lift:hover {
+      /* Transform 2: TranslateY (Move up slightly) */
+      transform: translateY(-8px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <h1>Chic Fashionista</h1>
+      <p>Everyday Style & Thrift Trends</p>
+      <span class="animated-badge">NEW POSTS DAILY</span>
+    </header>
+
+    <!-- SIDEBAR SECTION -->
+    <aside class="sidebar">
+      <h3>About the Blog</h3>
+      <img src="Fashion1.jpg" alt="Fashion item" class="filter-sepia">
+      <p>Welcome! Here we share practical style tips, outfit inspiration, and vintage finds.</p>
+    </aside>
+
+    <!-- CONTENT A SECTION (Top Right) -->
+    <main class="content-a">
+      <h2>Featured Look of the Week</h2>
+      <img src="Fashion2.jpg" alt="Featured Fashion" class="filter-grayscale">
+      <p>Hover over the image above to reveal full color! Layering simple staples with bold denim creates a effortless look.</p>
+    </main>
+
+    <!-- SUB-GRID FOR CONTENT B & CONTENT C -->
+    <div class="sub-grid">
+      
+      <!-- CONTENT B SECTION -->
+      <section class="content-b transform-zoom">
+        <h3>Seasonal Trends</h3>
+        <img src="Fashion3.jpg" alt="Trends">
+        <p>Hover over this box to test the <strong>CSS Scale Transform</strong> effect.</p>
+      </section>
+
+      <!-- CONTENT C SECTION -->
+      <section class="content-c transform-lift">
+        <h3>Thrift Finds</h3>
+        <img src="Fashion4.jpg" alt="Thrift">
+        <p>Hover over this box to test the <strong>CSS Translate Transform</strong> effect.</p>
+      </section>
+
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <p>&copy; 2026 Chic Fashionista Blog. IST 250 Assignment.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
