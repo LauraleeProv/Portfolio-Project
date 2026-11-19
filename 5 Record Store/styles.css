@@ -1,0 +1,156 @@
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+
+header {
+  background-color: #ff69b4; 
+  color: #ffffff;            
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Brush Script MT', 'Snell Roundhand', cursive;
+}
+
+header h1 {
+  font-family: 'Brush Script MT', 'Snell Roundhand', cursive;
+  font-size: 4.8rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+h2 {
+  font-family: 'Brush Script MT', 'Snell Roundhand', cursive;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: italic;
+  font-family: 'Brush Script MT', 'Snell Roundhand', cursive;
+  font-size: 3.2rem;
+}
+
+header nav a:hover {
+  color: #ffe4e1; 
+}
+
+main {
+  padding: 2rem;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;        
+  flex-wrap: wrap;             
+  justify-content: space-around; 
+  align-items: center;          
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.featured-record {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease; 
+}
+
+
+.featured-record:hover {
+  transform: translateY(15px) scale(1.1); 
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+
+table th, 
+table td {
+  font-family: 'Brush Script MT', 'Snell Roundhand', cursive;
+  font-size: 3.1rem; 
+  font-weight: normal;
+}
+
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.floated-image {
+  float: left; 
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.relative-box {
+  position: relative; 
+  background-color: #e8e8e8;
+  padding: 20px;
+  margin-top: 30px;
+  border-left: 5px solid #f39c12;
+  clear: both; 
+}
+
+.absolute-badge {
+  position: absolute; 
+  top: -10px;
+  right: 15px;
+  background-color: #f39c12;
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 40px;
+  border-top: 4px solid #f39c12; 
+  font-size: 0.9rem;
+}
