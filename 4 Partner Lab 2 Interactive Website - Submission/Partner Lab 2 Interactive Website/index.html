@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small interactive page you can make your own.">
+    <title>Make This Page Yours</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <header class="intro">
+            <span class="eyebrow">A little space, your way</span>
+            <h1 id="greetingHeading">Hello User!</h1>
+            <p id="messageParagraph">Welcome to your interactive page. Add a name, leave a note, and choose a color to make it yours.</p>
+        </header>
+
+        <section class="panel" aria-labelledby="customizeTitle">
+            <div class="section-heading">
+                <span class="step-number" aria-hidden="true">01</span>
+                <div>
+                    <h2 id="customizeTitle">Make it yours</h2>
+                    <p>Change the greeting, add a message, and set the mood.</p>
+                </div>
+            </div>
+            <form id="customizeForm">
+                <div class="field">
+                    <label for="nameInput">Your name</label>
+                    <input type="text" id="nameInput" placeholder="e.g. Alex" autocomplete="given-name">
+                </div>
+                <div class="field">
+                    <label for="messageInput">Your brief message</label>
+                    <input type="text" id="messageInput" placeholder="What would you like to say?">
+                </div>
+                <div class="field">
+                    <label for="colorSelect">Page background</label>
+                    <select id="colorSelect">
+                        <option value="#f4f2ed">Warm cream</option>
+                        <option value="#e5f2f4">Soft blue</option>
+                        <option value="#eaf1e6">Sage green</option>
+                        <option value="#fff2d9">Butter yellow</option>
+                        <option value="#f6e7eb">Blush pink</option>
+                        <option value="#ece8f5">Lavender</option>
+                    </select>
+                </div>
+                <button class="button button-primary" type="submit">Update my page <span aria-hidden="true">↗</span></button>
+                <p class="form-status" id="updateStatus" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="panel todo-panel" aria-labelledby="todoTitle">
+            <div class="section-heading">
+                <span class="step-number" aria-hidden="true">02</span>
+                <div>
+                    <h2 id="todoTitle">A few things to do</h2>
+                    <p>Keep your next steps in one place.</p>
+                </div>
+            </div>
+            <form id="todoForm" class="todo-form">
+                <div class="field todo-field">
+                    <label for="todoInput">New To Do item</label>
+                    <input type="text" id="todoInput" placeholder="e.g. Take a short walk" required>
+                </div>
+                <button class="button button-secondary" type="submit">Add item <span aria-hidden="true">+</span></button>
+            </form>
+            <ol id="todoList" class="todo-list" aria-live="polite"></ol>
+            <p id="emptyTodo" class="empty-state">Your list is clear. Add a task when you’re ready.</p>
+        </section>
+
+        <footer>Made to be customized <span aria-hidden="true">✳</span></footer>
+    </main>
+</body>
+</html>
