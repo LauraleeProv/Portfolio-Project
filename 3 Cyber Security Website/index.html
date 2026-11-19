@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Basics - Home</title>
+    <!-- Requirement 2: Shared CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <!-- Header Banner Image -->
+  <header class="hero-header">
+  
+  <h1>Understanding Cybersecurity</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tips.html">Safety Tips</a>
+    <a href="resources.html">Resources</a>
+  </nav>
+</header>
+
+
+
+    <!-- Requirement 3: Floating element containing both text and an image -->
+    <!-- Requirement 5: Using div as container -->
+    <div class="card-float">
+        <img src="phishing.jpg" alt="Phishing Warning Diagram">
+        <p><strong>Warning Sign:</strong> Always double-check sender email addresses before clicking links.</p>
+    </div>
+
+    <p>
+        Cybersecurity involves protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users via <span class="tech-term">ransomware</span>, or interrupting normal business processes.
+    </p>
+
+    <!-- Requirement 8: CSS Class Selector applied here -->
+    <div class="alert-box">
+        <strong>Critical Reminder:</strong> Never share your passwords or multi-factor authentication (MFA) codes with anyone.
+    </div>
+
+    <p>
+        Implementing effective cybersecurity measures is particularly challenging today because there are more devices than people, and attackers are becoming more innovative. Utilizing tools like <span class="tech-term">end-to-end encryption</span> is vital for personal privacy.
+    </p>
+
+    <!-- Requirement 9: Hover link button -->
+    <p><a href="tips.html" class="nav-btn">Explore Safety Tips</a></p>
+
+<main>
+  <!-- Main Overview -->
+  <section class="card">
+    <h2>Basic Info on Cybersecurity</h2>
+    <p>Cybersecurity is about protecting your accounts, devices, and data from unauthorized access. The biggest everyday risks come from phishing, malware, and weak passwords, and the good news is that simple habits dramatically reduce your chances of being hacked.</p>
+    <p>Cybersecurity protects people and systems from digital attacks — things like stolen passwords, infected devices, or trick messages designed to fool you. It matters because attackers often target everyday users, not just big companies.</p>
+  </section>
+
+  <!-- Threat 1: Phishing (Requirement #3 Floating Image Included Here) -->
+  <section class="card">
+    <h2>Phishing</h2>
+    <p>Phishing is when attackers send fake emails, texts, or messages pretending to be a trusted source (banks, Amazon, your school, HR, etc.) to trick you into clicking a link or giving your login info.</p>
+    
+    <!-- Floating image container -->
+    <div class="card-float">
+      <img src="malware.jpg" alt="Protect Against Malware">
+      <p><strong>Online Security:</strong> Stay Safe.</p>
+    </div>
+
+    <h3>How Phishing Works</h3>
+    <ul>
+      <li>Fake “reset your password” or “your account will be closed” emails</li>
+      <li>Messages with urgent language (“act now!”)</li>
+      <li>Links that look real but lead to malicious sites</li>
+      <li>Attachments that install malware</li>
+    </ul>
+
+    <h3>How to Protect Yourself</h3>
+    <ul>
+      <li>Don’t click login links from emails — go directly to the website[cite: 4].</li>
+      <li>Check the sender’s email address carefully.</li>
+      <li>Be suspicious of urgency or threats.</li>
+      <li>Never give passwords or MFA codes to anyone.</li>
+    </ul>
+  </section>
+
+  <!-- Threat 2: Malware -->
+  <section class="card">
+    <h2>Malware</h2>
+    <p><strong>Malware</strong> = malicious software designed to harm your device or steal data. It includes viruses, spyware, trojans, and ransomware.</p>
+    
+    <h3>Common Types</h3>
+    <ul>
+      <li><strong>Ransomware:</strong> locks your files and demands payment.</li>
+      <li><strong>Spyware:</strong> secretly collects your data.</li>
+      <li><strong>Trojans:</strong> disguised as legit software but harmful.</li>
+    </ul>
+
+    <h3>How Malware Spreads</h3>
+    <ul>
+      <li>Malicious email attachments</li>
+      <li>Fake downloads</li>
+      <li>Compromised websites</li>
+      <li>USB drives or shared files</li>
+    </ul>
+
+    <h3>How to Protect Yourself</h3>
+    <ul>
+      <li>Keep your device and apps updated.</li>
+      <li>Don’t open unexpected attachments.</li>
+      <li>Use antivirus or built-in security tools.</li>
+      <li>Back up important files regularly.</li>
+    </ul>
+  </section>
+
+  <!-- Threat 3: Weak Passwords -->
+  <section class="card">
+    <h2>Weak Passwords</h2>
+    <p>Weak passwords are one of the easiest ways hackers break into accounts. Attackers use automated tools to guess or reuse stolen passwords at massive scale.</p>
+
+    <h3>How Attackers Exploit Weak Passwords</h3>
+    <ul>
+      <li><strong>Credential stuffing:</strong> using leaked passwords from one site to log into others.</li>
+      <li><strong>Password spraying:</strong> trying common passwords (like “Summer2026!”) across many accounts.</li>
+      <li><strong>Brute force:</strong> guessing millions of combinations until one works.</li>
+    </ul>
+
+    <h3>What Makes a Strong Password</h3>
+    <ul>
+      <li>Long (12–16+ characters)</li>
+      <li>Unique for every account</li>
+      <li>Not based on personal info</li>
+      <li>Stored in a password manager (Bitwarden, 1Password, etc.)</li>
+    </ul>
+
+    <h3>Best Practices</h3>
+    <ul>
+      <li>Turn on multi-factor authentication (MFA) everywhere.</li>
+      <li>Never share passwords via text or email.</li>
+      <li>Check if your email has been in a breach (haveibeenpwned.com).</li>
+    </ul>
+  </section>
+
+  <!-- How They Fit Together -->
+  <section class="card">
+    <h2>How These Threats Fit Together</h2>
+    <p>Most successful attacks start with phishing, which leads to stolen passwords, which leads to account takeover, which can lead to malware or financial loss. <span class="highlight">Over 90% of cyberattacks begin with phishing attempts.</span></p>
+  </section>
+
+  <!-- Top 5 Habits (Ordered List) -->
+  <section class="card">
+    <h2>The 5 Most Important Habits (High Impact, Low Effort)</h2>
+    <ol>
+      <li>Use a password manager for unique passwords.</li>
+      <li>Enable MFA on email, banking, and social media.</li>
+      <li>Update your devices automatically.</li>
+      <li>Be cautious with links and attachments.</li>
+      <li>Back up important files (cloud + external drive).</li>
+    </ol>
+  </section>
+</main>
+
+
+
+</body>
+</html>
