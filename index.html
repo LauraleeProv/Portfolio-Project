@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Design Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff0f6;
+      font-family: 'Quicksand', sans-serif;
+      color: #4a2033;
+      text-align: center;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4.5rem;
+      color: #ff1493;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .project-list {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    a.project-link {
+      display: block;
+      background-color: #ffffff;
+      color: #d61c7c;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 16px 24px;
+      border: 2px solid #ff69b4;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.15);
+      transition: all 0.2s ease;
+    }
+
+    a.project-link:hover {
+      background-color: #ff69b4;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Checkout my work.</p>
+
+  <h1>My Web Portfolio</h1>
+  <p>Click any project below to view my websites:</p>
+
+  <div class="project-list">
+    <a class="project-link" href="1%20A%20Very%20Simple%20Webpage/">1. A Very Simple Webpage</a>
+    <a class="project-link" href="2%20Vintage%20Clothing%20Sale/">2. Vintage Clothing Sale</a>
+    <a class="project-link" href="3%20Cyber%20Security%20Website/">3. Cyber Security Website</a>
+    <a class="project-link" href="4%20Partner%20Lab%202%20Interactive%20Website%20-%20Submission/Partner%20Lab%202%20Interactive%20Website/">4. Partner Lab 2 Interactive Website</a>
+    <a class="project-link" href="5%20Record%20Store/">5. Record Store</a>
+    <a class="project-link" href="6%20Restaurant/">6. Restaurant</a>
+    <a class="project-link" href="7%20CSS%20Transforms%20%26%20Filters/">7. CSS Transforms &amp; Filters</a>
+    <a class="project-link" href="8%20Bootstrap%20Blog/">8. Bootstrap Blog</a>
+  </div>
+
 </body>
 </html>
